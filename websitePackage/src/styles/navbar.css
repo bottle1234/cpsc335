@@ -1,0 +1,83 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 10px; /* Add consistent gap between all nav items */
+}
+
+.nav-item {
+  position: relative;
+  padding: 0 10px;
+}
+
+.nav-item-login {
+  margin-left: 30px; /* Increased space before login */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #0066ff;
+  background-color: rgba(0, 102, 255, 0.1);
+}
+
+.nav-link.active {
+  color: #0066ff;
+  background-color: rgba(0, 102, 255, 0.1);
+}
+
+.login-button {
+  background-color: #0066ff;
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.login-button:hover {
+  background-color: #0052cc;
+  transform: translateY(-1px);
+}
+
+.login-button.active {
+  background-color: #0047b3;
+}

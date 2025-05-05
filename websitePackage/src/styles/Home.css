@@ -1,0 +1,93 @@
+.home-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure the hero section takes full width */
+.hero {
+  width: 100%;
+  position: relative;
+}
+
+.banner-image {
+  width: 20%;
+  height: auto;
+  max-height: 80vh; /* Adjust as needed */
+  object-fit: cover; /* Ensures image covers the space nicely */
+}
+
+/* Home Page Styles */
+.home-container {
+  width: 100%;
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: blur(2px);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: auto; /* Changed from 100% to auto */
+  max-width: 90%; /* Prevent content from touching edges */
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 1rem; /* Add some padding */
+}
+
+.hero-button {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 2px;
+  text-decoration: none;
+  border-radius: 3px; /* Slightly smaller radius */
+  font-size: 0.8rem; /* Reduced from 0.9rem */
+  font-weight: 500;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+  line-height: 1.2; /* Tighter line spacing */
+}
+
+.hero-button:hover {
+  background-color: #3a7bc8;
+  transform: scale(1.05); /* More noticeable hover effect */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-button {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Update mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-button {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}

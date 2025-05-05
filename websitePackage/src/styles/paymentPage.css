@@ -1,0 +1,157 @@
+.payment-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.payment-card {
+  padding: 1rem;
+}
+
+.payment-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.payment-amount {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.8rem;
+  background: #f8f8f8;
+  border-radius: 5px;
+}
+
+.payment-amount span {
+  font-weight: bold;
+  color: #0066ff;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group.error input {
+  border-color: #ff4444;
+}
+
+.field-error {
+  color: #ff4444;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.cvv-input {
+  position: relative;
+}
+
+.lock-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 1rem;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.payment-button:hover {
+  background: #0052cc;
+}
+
+.payment-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.payment-security {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  justify-content: center;
+}
+
+.payment-success {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background: #0066ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.payment-success h3 {
+  color: #0066ff;
+  margin-bottom: 0.5rem;
+}
+
+.payment-success p {
+  color: #666;
+}
